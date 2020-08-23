@@ -1,0 +1,29 @@
+{
+  "name": "haeim0147987/ht62020-my-journal",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/slack/command/journal.js": {
+      "name": "slack.command",
+      "subtype": {
+        "command": "journal"
+      }
+    },
+    "functions/events/slack/view_submission.js": {
+      "name": "slack.view_submission",
+      "subtype": {
+        "callback_id": "create-entry"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "MS_AZURE_KEY",
+      "description": "microsoft azure key"
+    },
+    {
+      "name": "MS_ENDPOINT",
+      "description": "microsoft azure endpoint"
+    }
+  ]
+}
