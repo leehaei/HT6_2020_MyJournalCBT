@@ -1,0 +1,9 @@
+{
+  "name": "ht62020-my-journal",
+  "author": "haeim0147987 <haeim01@gmail.com>",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "@azure/ai-text-analytics": "^5.0.1"
+  }
+}
